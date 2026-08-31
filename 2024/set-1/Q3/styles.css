@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Horizontal Navigation Bar */
+nav{
+    background-color: darkblue;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    margin: 5px;
+}
+
+nav a:hover{
+    background-color: lightblue;
+    color: black;
+}
+
+.content{
+    text-align: center;
+    padding: 30px;
+}
+
+iframe{
+    width: 560px;
+    height: 315px;
+    border: none;
+}

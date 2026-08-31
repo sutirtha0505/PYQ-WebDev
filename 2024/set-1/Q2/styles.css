@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+table{
+    width: 70%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td{
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th{
+    background-color: lightblue;
+}
+
+td{
+    background-color: lightgoldenrodyellow;
+}
+
+caption{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
