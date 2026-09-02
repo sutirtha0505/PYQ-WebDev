@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Mangement</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile">
+        <h1>Hotel Customer Profile</h1>
+
+        <form action="#">
+
+            <label>Name:</label>
+            <input type="text" name="name" required>
+
+            <label>Address:</label>
+            <input type="text" name="address" required>
+
+            <label>Age:</label>
+            <input type="number" name="age">
+
+            <label>Gender</label>
+            <span class="gender">
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+            </span>
+
+            <br>
+
+            <label>Room Type:</label>
+            <select name="room" id="room">
+                <option value="AC">AC</option>
+                <option value="Non-AC">Non-AC</option>
+                <option value="Delux">Delux</option>
+            </select>
+
+            <label>Type of Payment</label>
+            <span class="payment">
+                <input type="checkbox" name="payment" id="">Cash
+                <input type="checkbox" name="payment" id="">Debit Card
+                <input type="checkbox" name="payment" id="">Credit Card
+            </span>
+
+            <label>Contact No.:</label>
+            <input type="tel" name="contact" id="">
+
+            <br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
