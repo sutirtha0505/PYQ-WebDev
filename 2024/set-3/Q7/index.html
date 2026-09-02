@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Outdoor Sports Registration</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .form-box {
+            width: 600px;
+            margin: 30px auto;
+            background-color: white;
+            border: 3px solid black;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 25px;
+            margin: 0;
+            padding: 8px;
+            border-bottom: 2px solid black;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: none;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 6px;
+        }
+
+        .label {
+            width: 25%;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        textarea,
+        select {
+            width: 95%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 70px;
+        }
+
+        .sports {
+            line-height: 1.5;
+        }
+
+        .sports input {
+            margin-right: 5px;
+        }
+
+        .buttons {
+            text-align: center;
+        }
+
+        .buttons input {
+            width: 32%;
+            padding: 8px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-box">
+
+    <h1>Registration Form</h1>
+
+    <form>
+
+        <table>
+
+            <!-- Name -->
+            <tr>
+                <td class="label">Enter Name</td>
+                <td>
+                    <input type="text" name="name">
+                </td>
+            </tr>
+
+            <!-- Password -->
+            <tr>
+                <td class="label">Enter Password</td>
+                <td>
+                    <input type="password" name="password">
+                </td>
+            </tr>
+
+            <!-- Address -->
+            <tr>
+                <td class="label">Enter Address</td>
+                <td>
+                    <textarea name="address"></textarea>
+                </td>
+            </tr>
+
+            <!-- Games -->
+            <tr>
+                <td class="label">Select Game</td>
+
+                <td class="sports">
+
+                    <input type="checkbox" name="game" value="hockey">
+                    Hockey<br>
+
+                    <input type="checkbox" name="game" value="football">
+                    Football<br>
+
+                    <input type="checkbox" name="game" value="badminton">
+                    Badminton<br>
+
+                    <input type="checkbox" name="game" value="cricket">
+                    Cricket<br>
+
+                    <input type="checkbox" name="game" value="volleyball">
+                    Volleyball<br>
+
+                    <input type="checkbox" name="game" value="basketball">
+                    Basketball
+
+                </td>
+            </tr>
+
+            <!-- Gender -->
+            <tr>
+                <td class="label">Gender</td>
+
+                <td>
+                    <input type="radio" name="gender" value="male">
+                    Male
+
+                    <input type="radio" name="gender" value="female">
+                    Female
+                </td>
+            </tr>
+
+            <!-- Age -->
+            <tr>
+                <td class="label">Select your age</td>
+
+                <td>
+                    <select name="age">
+                        <option>Select</option>
+                        <option>Under 18</option>
+                        <option>18-25</option>
+                        <option>26-35</option>
+                        <option>36-50</option>
+                        <option>Above 50</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Photo -->
+            <tr>
+                <td class="label">Select Photo</td>
+
+                <td>
+                    <input type="file" name="photo">
+                </td>
+            </tr>
+
+            <!-- Buttons -->
+            <tr>
+                <td colspan="2" class="buttons">
+
+                    <input type="button" value="Click Me">
+
+                    <input type="reset" value="Reset">
+
+                    <input type="submit" value="Submit Form">
+
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</div>
+
+</body>
+</html>

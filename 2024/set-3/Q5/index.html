@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .form-box {
+            width: 500px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 9px;
+            margin: 8px 0 15px;
+            box-sizing: border-box;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        .option {
+            margin: 10px 0 15px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        input[type="submit"] {
+            display: block;
+            margin: 20px auto 0;
+            padding: 12px 35px;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: navy;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-box">
+
+        <h1>Survey Form</h1>
+
+        <form>
+
+            <!-- Text Box -->
+            <label>Name:</label>
+            <input type="text" name="name" placeholder="Enter your name">
+
+            <!-- Email -->
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Enter your email">
+
+            <!-- Number -->
+            <label>Age:</label>
+            <input type="number" name="age" placeholder="Enter your age">
+
+            <!-- Radio Buttons -->
+            <label>Gender:</label>
+            <div class="option">
+                <input type="radio" name="gender" value="male">
+                Male
+
+                <input type="radio" name="gender" value="female">
+                Female
+            </div>
+
+            <!-- Dropdown -->
+            <label>Occupation:</label>
+            <select name="occupation">
+                <option>Select your occupation</option>
+                <option>Student</option>
+                <option>Teacher</option>
+                <option>Engineer</option>
+                <option>Other</option>
+            </select>
+
+            <!-- Checkboxes -->
+            <label>What are your interests?</label>
+
+            <div class="option">
+                <input type="checkbox" name="interest" value="sports">
+                Sports
+                <br>
+
+                <input type="checkbox" name="interest" value="music">
+                Music
+                <br>
+
+                <input type="checkbox" name="interest" value="technology">
+                Technology
+                <br>
+
+                <input type="checkbox" name="interest" value="travel">
+                Travelling
+            </div>
+
+            <!-- Text Area -->
+            <label>Comments / Suggestions:</label>
+            <textarea name="comments"
+                placeholder="Enter your feedback"></textarea>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </div>
+
+</body>
+</html>

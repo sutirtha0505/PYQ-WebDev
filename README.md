@@ -1,24 +1,41 @@
 # HTML & CSS Practice Project
 
-This repository contains a collection of beginner-friendly HTML and CSS exercises organized under the `set-1` folder. Each question folder is a standalone webpage task that focuses on core web design concepts such as layout, styling, responsiveness, navigation, and section-based content design.
+This repository contains a collection of beginner-friendly HTML and CSS exercises from the 2024 question papers. Each question folder is a standalone webpage task that focuses on core web design concepts such as layout, styling, responsiveness, navigation, and section-based content design.
 
 ## Project Structure
 
 ```text
 PYQ/
 ├── README.md
-└── set-1/
-    ├── Q1/
-    ├── Q2/
-    ├── Q3/
-    ├── Q4/
-    ├── Q5/
-    ├── Q6/
-    ├── Q7/
-    └── Q8/
+└── 2024/
+    ├── set-1/
+    │   ├── Q1/
+    │   ├── Q2/
+    │   ├── Q3/
+    │   ├── Q4/
+    │   ├── Q5/
+    │   ├── Q6/
+    │   ├── Q7/
+    │   └── Q8/
+    ├── set-2/
+    │   ├── Q1/
+    │   ├── Q2/
+    │   ├── Q3/
+    │   ├── Q4/
+    │   ├── Q5/
+    │   └── Q6/
+    └── set-3/
+        ├── Q1/
+        ├── Q2/
+        ├── Q3/
+        ├── Q4/
+        ├── Q5/
+        ├── Q6/
+        ├── Q7/
+        └── Q8/
 ```
 
-Each folder contains an `index.html` file and related CSS/asset files for that specific exercise.
+Each question folder contains an `index.html` file and, where required, related CSS and supporting HTML files for that specific exercise.
 
 ## What is being practiced?
 
@@ -51,10 +68,10 @@ python3 -m http.server 8000
 Then open:
 
 ```text
-http://localhost:8000/set-1/Q1/
+http://localhost:8000/2024/set-1/Q1/
 ```
 
-Replace `Q1` with any other question folder you want to preview.
+Replace `set-1/Q1` with any available set and question folder you want to preview, such as `2024/set-3/Q8`.
 
 ## Notes
 
