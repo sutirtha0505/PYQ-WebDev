@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My News Blog</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        width: 80%;
+        margin: 30px auto;
+        border: 2px solid black;
+      }
+
+      /* Header */
+      header {
+        background-color: darkblue;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      /* Two Sections */
+      .main {
+        display: flex;
+      }
+
+      .main-section {
+        width: 50%;
+        padding: 20px;
+        background-color: #f2f2f2;
+      }
+
+      .breaking-news {
+        width: 50%;
+        padding: 20px;
+        background-color: #fff3cd;
+        border-left: 2px solid black;
+      }
+
+      h2 {
+        color: darkblue;
+      }
+
+      /* Scrolling News */
+      marquee {
+        height: 150px;
+        color: red;
+        font-weight: bold;
+        line-height: 2;
+      }
+
+      /* Footer */
+      footer {
+        background-color: darkblue;
+        color: white;
+        text-align: center;
+        padding: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <h1>My News Blog</h1>
+      </header>
+
+      <!-- Main Sections -->
+      <div class="main">
+        <!-- Main Section -->
+        <section class="main-section">
+          <h2>Main Section</h2>
+
+          <p>
+            Technology is rapidly changing the world. New developments in
+            Artificial Intelligence, Web Development and Cyber Security are
+            creating new opportunities for students and professionals.
+          </p>
+
+          <p>
+            The latest innovations are helping people solve real-world problems
+            and improve everyday life.
+          </p>
+
+          
+        </section>
+
+        <!-- Breaking News Section -->
+        <section class="breaking-news">
+          <h2>Breaking News</h2>
+
+          <marquee direction="up" scrollamount="10">
+            New technology launched today<br /><br />
+
+            AI research reaches new milestone<br /><br />
+
+            Major updates in web development<br /><br />
+
+            Cyber security awareness campaign announced<br /><br />
+
+            New programming tools released
+          </marquee>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <p>© 2026 My News Blog</p>
+      </footer>
+    </div>
+  </body>
+</html>

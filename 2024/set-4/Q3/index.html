@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaf2f8;
+            margin: 0;
+        }
+
+        .form-box {
+            width: 650px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        h2 {
+            color: darkblue;
+            border-bottom: 1px solid darkblue;
+            padding-bottom: 5px;
+        }
+
+        label {
+            display: inline-block;
+            width: 180px;
+            margin: 8px 0;
+            font-weight: bold;
+            vertical-align: top;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 400px;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        textarea {
+            height: 80px;
+        }
+
+        .options {
+            display: inline-block;
+            width: 400px;
+            margin: 5px 0;
+        }
+
+        .options input {
+            margin: 5px;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .buttons input {
+            padding: 10px 25px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: darkblue;
+            color: white;
+            cursor: pointer;
+        }
+
+        .buttons input:hover {
+            background-color: navy;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-box">
+
+    <h1>Student Registration Form</h1>
+
+    <form>
+
+        <!-- Personal Details -->
+        <h2>Personal Details</h2>
+
+        <label>Name:</label>
+        <input type="text" name="name" required>
+        <br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <br>
+
+        <label>Contact No:</label>
+        <input type="tel" name="contact">
+        <br>
+
+        <label>Age:</label>
+        <input type="number" name="age">
+        <br>
+
+        <label>Gender:</label>
+
+        <span class="options">
+            <input type="radio" name="gender" value="male">
+            Male
+
+            <input type="radio" name="gender" value="female">
+            Female
+
+            <input type="radio" name="gender" value="other">
+            Other
+        </span>
+        <br>
+
+        <label>Address:</label>
+        <textarea name="address"></textarea>
+        <br>
+
+
+        <!-- Educational Details -->
+        <h2>Educational Details</h2>
+
+        <label>Qualification:</label>
+
+        <select name="qualification">
+            <option>Select</option>
+            <option>Higher Secondary</option>
+            <option>Diploma</option>
+            <option>B.Tech</option>
+            <option>B.Sc</option>
+            <option>M.Tech</option>
+            <option>M.Sc</option>
+        </select>
+        <br>
+
+        <label>College / Institution:</label>
+        <input type="text" name="college">
+        <br>
+
+        <label>Passing Year:</label>
+        <input type="number" name="year">
+        <br>
+
+        <label>Percentage:</label>
+        <input type="number" name="percentage">
+        <br>
+
+
+        <!-- Achievements -->
+        <h2>Achievements & Hobbies</h2>
+
+        <label>Achievements:</label>
+        <textarea name="achievements"
+            placeholder="Enter your achievements"></textarea>
+        <br>
+
+        <label>Hobbies:</label>
+
+        <span class="options">
+            <input type="checkbox" name="hobby" value="sports">
+            Sports
+
+            <input type="checkbox" name="hobby" value="music">
+            Music
+
+            <input type="checkbox" name="hobby" value="reading">
+            Reading
+
+            <input type="checkbox" name="hobby" value="travelling">
+            Travelling
+        </span>
+        <br>
+
+
+        <!-- Photo Upload -->
+        <h2>Upload Photo</h2>
+
+        <label>Select Photo:</label>
+        <input type="file" name="photo" accept="image/*">
+        <br>
+
+
+        <!-- Buttons -->
+        <div class="buttons">
+
+            <input type="submit" value="Submit">
+
+            <input type="reset" value="Reset">
+
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>

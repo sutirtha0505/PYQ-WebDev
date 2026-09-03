@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Book Library</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f5f9;
+        }
+
+        header {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .form-box {
+            width: 400px;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h2 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 9px;
+            margin: 7px 0 12px;
+            box-sizing: border-box;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        .gender {
+            margin: 10px 0 15px;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 25px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: darkblue;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: navy;
+        }
+
+        /* Mobile view */
+        @media (max-width: 700px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .form-box {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>📚 E-Book Library</h1>
+        <p>Read. Learn. Grow.</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Sign Up Section -->
+        <div class="form-box">
+
+            <h2>Sign Up</h2>
+
+            <form>
+
+                <label>Username:</label>
+                <input type="text" name="username" required>
+
+                <label>Email:</label>
+                <input type="email" name="email" required>
+
+                <label>Contact:</label>
+                <input type="tel" name="contact">
+
+                <label>Gender:</label>
+
+                <div class="gender">
+                    <input type="radio" name="gender" value="male">
+                    Male
+
+                    <input type="radio" name="gender" value="female">
+                    Female
+
+                    <input type="radio" name="gender" value="other">
+                    Other
+                </div>
+
+                <label>Qualification:</label>
+
+                <select name="qualification">
+                    <option>Select Qualification</option>
+                    <option>Higher Secondary</option>
+                    <option>Graduate</option>
+                    <option>Post Graduate</option>
+                    <option>Other</option>
+                </select>
+
+                <label>Password:</label>
+                <input type="password" name="password" required>
+
+                <div class="buttons">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+
+            </form>
+
+        </div>
+
+
+        <!-- Sign In Section -->
+        <div class="form-box">
+
+            <h2>Sign In</h2>
+
+            <form>
+
+                <label>Username:</label>
+                <input type="text" name="username" required>
+
+                <label>Password:</label>
+                <input type="password" name="password" required>
+
+                <div class="buttons">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
