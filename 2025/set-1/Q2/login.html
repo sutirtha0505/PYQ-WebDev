@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Educational Website - Login</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaf2f8;
+            margin: 0;
+        }
+
+        .login-box {
+            width: 400px;
+            margin: 80px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        .buttons {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 25px;
+            margin: 5px;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        .links {
+            text-align: center;
+            line-height: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="login-box">
+
+    <h1>Student Login</h1>
+
+    <form>
+
+        <label>User ID:</label>
+        <input type="text" name="userid">
+
+        <label>Password:</label>
+        <input type="password" name="password">
+
+        <div class="buttons">
+            <input type="submit" value="Login">
+            <input type="reset" value="Reset">
+        </div>
+
+    </form>
+
+    <div class="links">
+        <a href="forgot.html">Forgot Password?</a>
+        <br>
+        <a href="register.html">Register Now?</a>
+    </div>
+
+</div>
+
+</body>
+</html>

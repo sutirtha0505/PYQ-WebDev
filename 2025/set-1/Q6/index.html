@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaf2f8;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .form-box {
+            width: 650px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+            margin-bottom: 25px;
+        }
+
+        .row {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: inline-block;
+            width: 180px;
+            font-weight: bold;
+            vertical-align: top;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 400px;
+            padding: 9px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 80px;
+            resize: none;
+        }
+
+        .radio,
+        .check {
+            width: auto;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 25px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: darkblue;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="reset"] {
+            background-color: gray;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-box">
+
+    <h1>Student Registration Form</h1>
+
+    <form>
+
+        <div class="row">
+            <label>Name:</label>
+            <input type="text" name="name" required>
+        </div>
+
+        <div class="row">
+            <label>Phone No.:</label>
+            <input type="tel" name="phone" required>
+        </div>
+
+        <div class="row">
+            <label>Email:</label>
+            <input type="email" name="email">
+        </div>
+
+        <div class="row">
+            <label>Address:</label>
+            <textarea name="address"></textarea>
+        </div>
+
+        <div class="row">
+            <label>Date of Birth:</label>
+            <input type="date" name="dob">
+        </div>
+
+        <div class="row">
+            <label>Gender:</label>
+
+            <input class="radio" type="radio" name="gender" value="Male">
+            Male
+
+            <input class="radio" type="radio" name="gender" value="Female">
+            Female
+
+            <input class="radio" type="radio" name="gender" value="Other">
+            Other
+        </div>
+
+        <div class="row">
+            <label>Stream of Study:</label>
+
+            <select name="stream">
+                <option value="">-- Select Stream --</option>
+                <option>Science</option>
+                <option>Arts</option>
+                <option>Commerce</option>
+                <option>Computer Science</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <label>Major Subject:</label>
+
+            <select name="major">
+                <option value="">-- Select Major Subject --</option>
+                <option>Computer Science</option>
+                <option>Mathematics</option>
+                <option>Physics</option>
+                <option>Chemistry</option>
+                <option>English</option>
+                <option>Economics</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <label>Minor Subjects:</label>
+
+            <input class="check" type="checkbox" name="minor" value="Math">
+            Mathematics
+
+            <input class="check" type="checkbox" name="minor" value="English">
+            English
+
+            <input class="check" type="checkbox" name="minor" value="Physics">
+            Physics
+        </div>
+
+        <div class="row">
+            <label>Qualification:</label>
+
+            <select name="qualification">
+                <option>10th</option>
+                <option>12th</option>
+                <option>Diploma</option>
+                <option>Graduation</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <label>Hobbies:</label>
+
+            <input class="check" type="checkbox" name="hobby">
+            Reading
+
+            <input class="check" type="checkbox" name="hobby">
+            Sports
+
+            <input class="check" type="checkbox" name="hobby">
+            Music
+        </div>
+
+        <div class="buttons">
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Header */
+header {
+  background-color: #1769aa;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Navigation */
+nav {
+  width: 220px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  padding-top: 100px;
+  background-color: #222;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 18px 20px;
+  border-bottom: 1px solid #444;
+}
+
+nav a:hover {
+  background-color: #1769aa;
+}
+
+/* Main content */
+main {
+  margin-left: 220px;
+  padding: 30px;
+}
+
+.intro {
+  text-align: center;
+}
+
+/* Package sections are hidden initially */
+.package {
+  display: none;
+  background-color: white;
+  margin: 30px auto;
+  padding: 25px;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px #aaa;
+}
+
+/* Show selected package */
+.package:target {
+  display: block;
+}
+
+.package h2 {
+  color: #1769aa;
+}
+
+.places {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.place {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fafafa;
+}
+
+.place img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.place-info {
+  padding: 15px;
+}
+
+.place-info h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.details {
+  line-height: 1.8;
+}
