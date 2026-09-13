@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Restaurant Menu</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+        }
+
+        /* Header */
+        header {
+            background-color: #8b0000;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* Menu */
+        .menu {
+            width: 85%;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .item {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px #aaa;
+            text-align: center;
+        }
+
+        .item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .item h2 {
+            color: #8b0000;
+            margin: 15px 0 5px;
+        }
+
+        .item p {
+            color: #666;
+            padding: 0 15px;
+            line-height: 1.5;
+        }
+
+        .price {
+            color: green;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .order {
+            background-color: #8b0000;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            margin: 10px 0 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .order:hover {
+            background-color: #d35400;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        /* Responsive */
+        @media (max-width: 800px) {
+            .menu {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 550px) {
+            .menu {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🍴 Spice Garden Restaurant</h1>
+        <p>Delicious Food • Great Taste • Happy Moments</p>
+    </header>
+
+
+    <!-- Menu Items -->
+    <div class="menu">
+
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=900&q=80" alt="Cheese pizza">
+
+            <h2>Cheese Pizza</h2>
+
+            <p>
+                Delicious pizza topped with fresh vegetables
+                and melted cheese.
+            </p>
+
+            <p class="price">₹250</p>
+
+            <button class="order">Order Now</button>
+        </div>
+
+
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80" alt="Veg burger">
+
+            <h2>Veg Burger</h2>
+
+            <p>
+                Crispy vegetable patty with fresh vegetables
+                and special sauce.
+            </p>
+
+            <p class="price">₹150</p>
+
+            <button class="order">Order Now</button>
+        </div>
+
+
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?auto=format&fit=crop&w=900&q=80" alt="White sauce pasta">
+
+            <h2>White Sauce Pasta</h2>
+
+            <p>
+                Creamy pasta prepared with vegetables and
+                delicious white sauce.
+            </p>
+
+            <p class="price">₹200</p>
+
+            <button class="order">Order Now</button>
+        </div>
+
+
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1631515242808-497c3fbd3972?auto=format&fit=crop&w=900&q=80" alt="Chicken biryani">
+
+            <h2>Chicken Biryani</h2>
+
+            <p>
+                Aromatic basmati rice cooked with chicken
+                and traditional spices.
+            </p>
+
+            <p class="price">₹300</p>
+
+            <button class="order">Order Now</button>
+        </div>
+
+
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=900&q=80" alt="Vegetable fried rice">
+
+            <h2>Veg Fried Rice</h2>
+
+            <p>
+                Fried rice prepared with fresh vegetables
+                and special spices.
+            </p>
+
+            <p class="price">₹180</p>
+
+            <button class="order">Order Now</button>
+        </div>
+
+
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=900&q=80" alt="Ice cream">
+
+            <h2>Ice Cream</h2>
+
+            <p>
+                Delicious and creamy ice cream available
+                in different flavours.
+            </p>
+
+            <p class="price">₹100</p>
+
+            <button class="order">Order Now</button>
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Spice Garden Restaurant | Contact: 9876543210</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Registration Form</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eaf2f8;
+        }
+
+        .form-box {
+            width: 650px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1f4e79;
+            margin-bottom: 25px;
+        }
+
+        .row {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: inline-block;
+            width: 180px;
+            font-weight: bold;
+            vertical-align: top;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="number"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 400px;
+            padding: 9px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 80px;
+            resize: none;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 25px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1f4e79;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="reset"] {
+            background-color: #777;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 700px) {
+            .form-box {
+                width: 90%;
+                padding: 20px;
+            }
+
+            label {
+                display: block;
+                width: 100%;
+                margin-bottom: 5px;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            input[type="date"],
+            input[type="number"],
+            input[type="password"],
+            select,
+            textarea {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-box">
+
+        <h1>Employee Registration Form</h1>
+
+        <form>
+
+            <div class="row">
+                <label>Employee Name:</label>
+                <input type="text" name="name" required>
+            </div>
+
+            <div class="row">
+                <label>Employee ID:</label>
+                <input type="text" name="employee_id" required>
+            </div>
+
+            <div class="row">
+                <label>Password:</label>
+                <input type="password" name="password">
+            </div>
+
+            <div class="row">
+                <label>Email:</label>
+                <input type="email" name="email" required>
+            </div>
+
+            <div class="row">
+                <label>Phone Number:</label>
+                <input type="tel" name="phone">
+            </div>
+
+            <div class="row">
+                <label>Date of Birth:</label>
+                <input type="date" name="dob">
+            </div>
+
+            <div class="row">
+                <label>Gender:</label>
+
+                <input type="radio" name="gender" value="Male">
+                Male
+
+                <input type="radio" name="gender" value="Female">
+                Female
+
+                <input type="radio" name="gender" value="Other">
+                Other
+            </div>
+
+            <div class="row">
+                <label>Department:</label>
+
+                <select name="department">
+                    <option value="">-- Select Department --</option>
+                    <option>IT</option>
+                    <option>HR</option>
+                    <option>Finance</option>
+                    <option>Marketing</option>
+                    <option>Sales</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label>Designation:</label>
+                <input type="text" name="designation">
+            </div>
+
+            <div class="row">
+                <label>Qualification:</label>
+
+                <select name="qualification">
+                    <option>10th</option>
+                    <option>12th</option>
+                    <option>Diploma</option>
+                    <option>Graduation</option>
+                    <option>Post Graduation</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label>Address:</label>
+                <textarea name="address"></textarea>
+            </div>
+
+            <div class="row">
+                <label>Joining Date:</label>
+                <input type="date" name="joining_date">
+            </div>
+
+            <div class="row">
+                <label>Skills:</label>
+
+                <input type="checkbox" name="skill" value="HTML">
+                HTML
+
+                <input type="checkbox" name="skill" value="CSS">
+                CSS
+
+                <input type="checkbox" name="skill" value="Java">
+                Java
+
+                <input type="checkbox" name="skill" value="Python">
+                Python
+            </div>
+
+            <div class="row">
+                <label>Upload Photo:</label>
+                <input type="file" name="photo">
+            </div>
+
+            <div class="buttons">
+                <input type="submit" value="Register">
+                <input type="reset" value="Reset">
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

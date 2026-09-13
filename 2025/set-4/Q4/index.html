@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Page Layout</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* Header */
+        header {
+            background-color: #1f4e79;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Navigation Menu */
+        nav {
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+        }
+
+        nav a:hover {
+            background-color: #1f4e79;
+        }
+
+        /* Main Content */
+        main {
+            width: 80%;
+            min-height: 400px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: white;
+            box-shadow: 0 0 10px gray;
+            border-radius: 8px;
+        }
+
+        main h2 {
+            color: #1f4e79;
+        }
+
+        main p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1f4e79;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            main {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>My Website</h1>
+        <p>Welcome to my web page</p>
+    </header>
+
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </nav>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <h2>Welcome to Our Website</h2>
+
+        <p>
+            This is the main content section of the webpage.
+            Here we can display information, images, articles,
+            or other important content.
+        </p>
+
+        <p>
+            HTML is used to create the structure of the webpage,
+            while CSS is used to style and design the webpage.
+        </p>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 My Website | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>

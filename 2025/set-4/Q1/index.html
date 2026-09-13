@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Java Programming Course</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f6fa;
+        }
+
+        /* Header */
+        header {
+            background-color: #1f4e79;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 38px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* Main Section */
+        .container {
+            width: 85%;
+            margin: 30px auto;
+            display: flex;
+            gap: 25px;
+        }
+
+        .intro {
+            width: 65%;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #aaa;
+        }
+
+        .intro h2 {
+            color: #1f4e79;
+            border-bottom: 2px solid #1f4e79;
+            padding-bottom: 8px;
+        }
+
+        .intro p {
+            font-size: 17px;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .intro ul {
+            line-height: 2;
+        }
+
+        /* Registration Form */
+        .form-box {
+            width: 35%;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #aaa;
+        }
+
+        .form-box h2 {
+            text-align: center;
+            color: #1f4e79;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: auto;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #1f4e79;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="reset"] {
+            background-color: gray;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1f4e79;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        /* Responsive */
+        @media (max-width: 700px) {
+
+            .container {
+                flex-direction: column;
+                width: 90%;
+            }
+
+            .intro,
+            .form-box {
+                width: 100%;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Java Programming Course</h1>
+        <p>Learn Java from Beginner to Advanced Level</p>
+    </header>
+
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- Introduction Section -->
+        <div class="intro">
+
+            <h2>Introduction to Java</h2>
+
+            <p>
+                Java is a popular, powerful and object-oriented programming
+                language. It is widely used for developing desktop applications,
+                web applications, mobile applications and enterprise software.
+            </p>
+
+            <p>
+                This course is designed for beginners as well as students who
+                want to develop strong programming skills using Java.
+            </p>
+
+            <h2>Course Contents</h2>
+
+            <ul>
+                <li>Introduction to Java</li>
+                <li>Variables and Data Types</li>
+                <li>Operators and Expressions</li>
+                <li>Conditional Statements</li>
+                <li>Loops</li>
+                <li>Arrays and Strings</li>
+                <li>Classes and Objects</li>
+                <li>Inheritance and Polymorphism</li>
+                <li>Exception Handling</li>
+                <li>File Handling</li>
+            </ul>
+
+            <h2>Course Details</h2>
+
+            <p>
+                <b>Duration:</b> 3 Months
+            </p>
+
+            <p>
+                <b>Mode:</b> Online / Offline
+            </p>
+
+            <p>
+                <b>Course Fee:</b> ₹6,000
+            </p>
+
+        </div>
+
+
+        <!-- Contact Form -->
+        <div class="form-box">
+
+            <h2>Register Now</h2>
+
+            <form>
+
+                <label>Name:</label>
+                <input type="text"
+                       name="name"
+                       placeholder="Enter your name"
+                       required>
+
+                <label>Mobile No.:</label>
+                <input type="tel"
+                       name="mobile"
+                       placeholder="Enter mobile number"
+                       required>
+
+                <label>Email ID:</label>
+                <input type="email"
+                       name="email"
+                       placeholder="Enter email address"
+                       required>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Java Programming Course | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
