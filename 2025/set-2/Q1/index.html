@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Maharaja Manindra Chandra College</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        /* Header */
+        header {
+            background-color: #123c69;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+        }
+
+        header img {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin: 5px 0;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: #123c69;
+        }
+
+        /* Main Content */
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 25px;
+        }
+
+        .main-content {
+            flex: 2;
+            background-color: white;
+            padding: 25px;
+        }
+
+        .side-content {
+            flex: 1;
+            background-color: white;
+            padding: 25px;
+        }
+
+        h2 {
+            color: #123c69;
+            border-bottom: 2px solid #123c69;
+            padding-bottom: 8px;
+        }
+
+        ul {
+            line-height: 2;
+        }
+
+        /* Notice Board */
+        .notice {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-left: 5px solid orange;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #123c69;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header img {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                border-bottom: 1px solid #555;
+            }
+
+            .container {
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            .main-content,
+            .side-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- College Header -->
+    <header>
+
+        <img src="https://www.mmccollege.ac.in/site_assets/images/logo_maharaja.png" alt="College Logo">
+
+        <div>
+            <h1>Maharaja Manindra Chandra College of Science and Technology</h1>
+            <p>Affiliated to University of Calcutta</p>
+        </div>
+
+    </header>
+
+
+    <!-- Navigation Menu -->
+    <nav>
+
+        <a href="#">Home</a>
+
+        <a href="#">About Us</a>
+
+        <a href="#">Administration</a>
+
+        <a href="#">Examination</a>
+
+        <a href="#">Notice Board</a>
+
+        <a href="#">Departments</a>
+
+        <a href="#">Contact</a>
+
+    </nav>
+
+
+    <!-- Main Page -->
+    <div class="container">
+
+        <!-- Main Content -->
+        <div class="main-content">
+
+            <h2>Welcome to Maharaja Manindra Chandra College</h2>
+
+            <p>
+                Maharaja Manindra Chandra College is a reputed institution providing quality
+                education in science, technology, commerce and humanities.
+                The college aims to develop students through academic
+                excellence and various co-curricular activities.
+            </p>
+
+            <h2>Courses Offered</h2>
+
+            <ul>
+                <li>Post Graduate Courses</li>
+                <li>Undergraduate Courses</li>
+                <li>Certificate Courses</li>
+                <li>Diploma Courses</li>
+            </ul>
+
+            <h2>Departments</h2>
+
+            <ul>
+                <li>Computer Science</li>
+                <li>Mathematics</li>
+                <li>Physics</li>
+                <li>Chemistry</li>
+                <li>English</li>
+                <li>Commerce</li>
+            </ul>
+
+        </div>
+
+
+        <!-- Right Side -->
+        <div class="side-content">
+
+            <h2>Principal's Desk</h2>
+
+            <img src="https://www.mmccollege.ac.in/uploads/1755157201_PrincipalImage.jpeg"
+                 alt="Principal"
+                 width="150">
+
+            <p>
+                Welcome to Maharaja Manindra Chandra College. Our institution is committed to
+                providing quality education and creating responsible,
+                skilled and successful students.
+            </p>
+
+            <p>
+                We encourage our students to participate in academic,
+                cultural and extracurricular activities.
+            </p>
+
+
+            <h2>Notice Board</h2>
+
+            <div class="notice">
+
+                <p>Admission for 2026-27 is now open.</p>
+
+                <p>Semester examination schedule published.</p>
+
+                <p>College will remain closed on the upcoming holiday.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Maharaja Manindra Chandra College | All Rights Reserved
+        </p>
+
+        <p>
+            Email: abccollege@example.com |
+            Phone: 9876543210
+        </p>
+
+    </footer>
+
+</body>
+</html>

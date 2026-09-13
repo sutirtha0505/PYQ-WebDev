@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product List</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1f4e79;
+        }
+
+        table {
+            width: 80%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 0 10px #aaa;
+        }
+
+        th {
+            background-color: #1f4e79;
+            color: white;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+
+        td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+
+        tr:nth-child(even) {
+            background-color: #eaf2f8;
+        }
+
+        tr:hover {
+            background-color: #d6eaf8;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Product List</h1>
+
+    <table>
+
+        <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+
+        <tr>
+            <td>P001</td>
+            <td>Laptop</td>
+            <td>Electronics</td>
+            <td class="price">₹55,000</td>
+            <td>10</td>
+        </tr>
+
+        <tr>
+            <td>P002</td>
+            <td>Smartphone</td>
+            <td>Electronics</td>
+            <td class="price">₹25,000</td>
+            <td>25</td>
+        </tr>
+
+        <tr>
+            <td>P003</td>
+            <td>Headphones</td>
+            <td>Accessories</td>
+            <td class="price">₹2,500</td>
+            <td>40</td>
+        </tr>
+
+        <tr>
+            <td>P004</td>
+            <td>Keyboard</td>
+            <td>Computer Accessories</td>
+            <td class="price">₹1,200</td>
+            <td>30</td>
+        </tr>
+
+        <tr>
+            <td>P005</td>
+            <td>Smart Watch</td>
+            <td>Wearable</td>
+            <td class="price">₹4,000</td>
+            <td>20</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>

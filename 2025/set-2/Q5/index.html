@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>C Programming Course</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eef3f8;
+        }
+
+        /* Header */
+        header {
+            background-color: #1b4f72;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* Main Container */
+        .container {
+            width: 85%;
+            margin: 30px auto;
+            display: flex;
+            gap: 25px;
+        }
+
+        /* Course Information */
+        .course-info {
+            width: 65%;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #aaa;
+        }
+
+        .course-info h2 {
+            color: #1b4f72;
+            border-bottom: 2px solid #1b4f72;
+            padding-bottom: 8px;
+        }
+
+        .course-info ul {
+            line-height: 2;
+        }
+
+        .details {
+            background-color: #d6eaf8;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        /* Contact Form */
+        .contact {
+            width: 35%;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #aaa;
+        }
+
+        .contact h2 {
+            color: #1b4f72;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        textarea {
+            height: 80px;
+            resize: none;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: auto;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            color: white;
+            background-color: #1b4f72;
+            cursor: pointer;
+        }
+
+        input[type="reset"] {
+            background-color: gray;
+        }
+
+        footer {
+            background-color: #1b4f72;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+
+            .container {
+                flex-direction: column;
+                width: 90%;
+            }
+
+            .course-info,
+            .contact {
+                width: 100%;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>C Programming Course</h1>
+        <p>Learn C Programming from Basics to Advanced</p>
+    </header>
+
+
+    <div class="container">
+
+        <!-- Course Details -->
+        <div class="course-info">
+
+            <h2>About the Course</h2>
+
+            <p>
+                This course is designed to provide complete knowledge of
+                C programming. Students will learn programming concepts,
+                problem solving and practical implementation using C.
+            </p>
+
+            <h2>Topics Covered</h2>
+
+            <ul>
+                <li>Introduction to C Programming</li>
+                <li>Variables and Data Types</li>
+                <li>Operators and Expressions</li>
+                <li>Conditional Statements</li>
+                <li>Loops</li>
+                <li>Arrays and Strings</li>
+                <li>Functions</li>
+                <li>Pointers</li>
+                <li>Structures and Unions</li>
+                <li>File Handling</li>
+            </ul>
+
+            <div class="details">
+
+                <h2>Course Details</h2>
+
+                <p><b>Duration:</b> 3 Months</p>
+
+                <p><b>Mode of Delivery:</b> Online / Offline</p>
+
+                <p><b>Course Fee:</b> ₹5,000</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Contact Form -->
+        <div class="contact">
+
+            <h2>Contact Us</h2>
+
+            <form>
+
+                <label>Name:</label>
+                <input type="text" name="name"
+                       placeholder="Enter your name" required>
+
+                <label>Phone Number:</label>
+                <input type="tel" name="phone"
+                       placeholder="Enter phone number" required>
+
+                <label>Email ID:</label>
+                <input type="email" name="email"
+                       placeholder="Enter email address" required>
+
+                <label>Address:</label>
+                <textarea name="address"
+                          placeholder="Enter your address"></textarea>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <p>© 2026 C Programming Course | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

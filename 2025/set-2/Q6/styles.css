@@ -1,0 +1,38 @@
+/* External CSS */
+
+body {
+    background-color: #eef5ff;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: darkred;
+    font-size: 26px;
+    margin: 20px;
+}
+
+p {
+    color: #444;
+    font-size: 18px;
+    padding: 12px;
+    margin: 20px;
+    background-color: white;
+}
+
+.highlight {
+    color: purple;
+    background-color: #f5e6ff;
+    border: 2px solid purple;
+}
+
+a {
+    color: blue;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}

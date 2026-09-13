@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tour Packages</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #0b6e69;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #222;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        .packages {
+            width: 90%;
+            margin: 30px auto;
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .package {
+            width: 40%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+            text-align: center;
+        }
+
+        .package img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .package h2 {
+            color: #0b6e69;
+        }
+
+        .package p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .price {
+            color: green;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #0b6e69;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 700px) {
+            .packages {
+                flex-direction: column;
+            }
+
+            .package {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Our Tour Packages</h1>
+        <p>Choose your perfect destination</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="packages.html">Packages</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="packages">
+
+        <!-- Package 1 -->
+        <div class="package">
+
+            <img src="https://assets.cntraveller.in/photos/67f6324c24bc54d15bbde012/master/w_2560%2Cc_limit/GettyImages-1263341271.jpg" alt="Goa">
+
+            <h2>Goa Beach Tour</h2>
+
+            <p>
+                Enjoy the beautiful beaches, nightlife and scenic
+                beauty of Goa.
+            </p>
+
+            <p><b>Duration:</b> 4 Days / 3 Nights</p>
+
+            <p class="price">₹15,000 per person</p>
+
+            <a href="#" class="button">Book Now</a>
+
+        </div>
+
+        <!-- Package 2 -->
+        <div class="package">
+
+            <img src="https://www.oyorooms.com/blog/wp-content/uploads/2017/12/Darjeeling-min.jpg" alt="Darjeeling">
+
+            <h2>Darjeeling Hill Tour</h2>
+
+            <p>
+                Explore the beautiful mountains, tea gardens and
+                scenic views of Darjeeling.
+            </p>
+
+            <p><b>Duration:</b> 5 Days / 4 Nights</p>
+
+            <p class="price">₹18,000 per person</p>
+
+            <a href="#" class="button">Book Now</a>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Explore India Tourism | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
